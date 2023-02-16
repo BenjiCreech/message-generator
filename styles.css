@@ -1,4 +1,14 @@
-h1 {
-    color: slategrey;
-    background-color: snow;
+* {
+    background-color: darkslategray;
+}
+
+h1, h3 {
+    color: gainsboro;
+}
+
+.button {
+    background-color: darkred;
+    color: gainsboro;
+    padding: 10px;
+    font-size: 24px;
 }

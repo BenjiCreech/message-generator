@@ -3,4 +3,10 @@ let returnStatement = "testing output";
 
 
 
-document.createElement("h3").appendChild(document.createTextNode("returnStatement"));
+//Outputs the selected quote to UI
+const output = document.createElement("h3");
+const node = document.createTextNode(returnStatement);
+output.appendChild(node);
+
+const element = document.getElementById("output");
+element.appendChild(output);

@@ -7,9 +7,12 @@ h1, h3 {
     color: rgba(220, 220, 220, 0.713);
 }
 
-.button {
+
+
+.input {
     background-color: darkred;
     color: rgba(220, 220, 220, 0.713);
     padding: 10px;
     font-size: 24px;
+    margin-top: 40px;
 }

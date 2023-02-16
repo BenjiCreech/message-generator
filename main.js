@@ -4,5 +4,7 @@ let returnStatement = "testing output";
 
 
 //Outputs the selected quote to UI
-const output = document.createElement("h3");
-output.innerHTML(returnStatement);
+
+document.getElementById("output").innerHTML(
+    "<h3>" + returnStatement + "</h3>"
+);

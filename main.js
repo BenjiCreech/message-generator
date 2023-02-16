@@ -1,9 +1,9 @@
 
-let returnStatement = "testing output";
+let returnStatement = "<h3>" + "testing output" + "</h3>";
 
 
 
 //Outputs the selected quote to UI
 function deliverOutput() {
-    document.getElementById("output").innerHTML += (`<h3>${returnStatement}</h3>`);
+    document.getElementById("output").innerHTML += (returnStatement);
 }

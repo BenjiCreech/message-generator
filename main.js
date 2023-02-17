@@ -54,4 +54,5 @@ function deliverOutput() {
 }
 
 //Event Listener
-document.getElementById("button").addEventListener("click", deliverOutput());
+let btn = document.getElementById("button");
+btn.addEventListener("click", deliverOutput);

@@ -50,7 +50,7 @@ function selectQuote(name) {
 
 //Outputs the selected quote to UI
 function deliverOutput() {
-    document.getElementById("output").insertAdjacentElement('beforeend', returnStatement);
+    document.getElementById("output").insertAdjacentElement('beforeend', `<h3>${selectCharacter}</h3>`);
 }
 
 //Event Listener

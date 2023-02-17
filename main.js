@@ -53,3 +53,5 @@ function deliverOutput() {
     document.getElementById("output").innerHTML += (returnStatement);
 }
 
+//Event Listener
+document.getElementById("button").addEventListener("click", deliverOutput());

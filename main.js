@@ -1,9 +1,8 @@
 
 //Set intital Variables
+let characterToQuote = selectCharacter();
 let output = characterToQuote;
 let returnStatement = "<h3>" + output + "</h3>";
-
-let characterToQuote = selectCharacter();
 
 //Randomly selects character to quote
 function selectCharacter() {

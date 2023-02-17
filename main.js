@@ -56,8 +56,12 @@ btn.addEventListener("click", deliverOutput);
 //Outputs the selected quote to UI
 function deliverOutput() {
     let header = document.createElement('h3');
-    const elem = document.getElementById('output').appendChild(header);
+    const elem = document.getElementById('output').append(header);
     elem.innerHTML += (returnStatement);
+
+    let btn = document.getElementById("button");
+    btn.addEventListener("click", deliverOutput);
+
 }
 
 

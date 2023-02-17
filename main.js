@@ -1,8 +1,16 @@
 
+//Store quote arrays
+const schmidtQuotes = [];
+const nickQuotes = [];
+const jessQuotes = [];
+const ceceQuotes = [];
+const winstonQuotes = [];
+const coachQuotes = [];
+
 //Set intital Variables
 let characterToQuote = selectCharacter();
 let output = characterToQuote;
-let returnStatement = "<h3>" + output + "</h3>";
+let returnStatement = "<h3>" + selectCharacter() + "</h3>";
 
 //Randomly selects character to quote
 function selectCharacter() {
@@ -14,12 +22,6 @@ function selectCharacter() {
 //Random quote from selected character
 function selectQuote(name) {
     const randomNum = Math.floor(Math.random() * 10);
-    const schmidtQuotes = [];
-    const nickQuotes = [];
-    const jessQuotes = [];
-    const ceceQuotes = [];
-    const winstonQuotes = [];
-    const coachQuotes = [];
 
     switch(name) {
         case 'Schmidt':

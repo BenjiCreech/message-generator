@@ -50,3 +50,4 @@ function selectQuote(name) {
 function deliverOutput() {
     document.getElementById("output").innerHTML += (returnStatement);
 }
+

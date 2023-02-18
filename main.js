@@ -7,10 +7,6 @@ const ceceQuotes = [];
 const winstonQuotes = [];
 const coachQuotes = [];
 
-//Set intital Variables
-let characterToQuote = selectCharacter();
-let output = characterToQuote;
-let returnStatement = "<h3>" + selectCharacter() + "</h3>";
 
 //Randomly selects character to quote
 function selectCharacter() {
@@ -47,21 +43,11 @@ function selectQuote(name) {
     }
 }
 
-
-//Event Listener
-let btn = document.getElementById("button");
-btn.addEventListener("click", deliverOutput);
-
-
 //Outputs the selected quote to UI
 function deliverOutput() {
-    let header = document.createElement('h3');
-    const elem = document.getElementById('output').append(header);
-    elem.innerHTML += (returnStatement);
-
-    let btn = document.getElementById("button");
-    btn.addEventListener("click", deliverOutput);
-
+    let characterToQuote = selectCharacter();
+    let myQuote = selectQuote(characterToQuote);
+    document.getElementById('output').innerHTML = myQuote;
 }
 
 
